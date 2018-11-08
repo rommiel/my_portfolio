@@ -5,17 +5,32 @@ body {
 	font-family: 'Roboto', sans-serif;
 }
 
+.me {
+	height: 200px;
+	border-radius: 100%;
+	border-style: solid;
+	border-color: white;
+	margin-top: 40px;
+}
+
+.tblMain {
+	text-align: center;
+	margin-top: 60px;
+}
+
 h1 {
 	color: white;
-	font-size: 60px;
+	font-size: 80px;
 	font-weight: bold;
 	margin-bottom: 0;
 }
 
 h2 {
-	color: white;
-	font-size: 24px;
-	margin-top: 0;	
+	color: yellow;
+	font-size: 25px;
+	font-weight: normal;
+	margin-top: 0;
+	border-bottom: 20px;	
 }
 
 .bio {
@@ -24,28 +39,17 @@ h2 {
 	margin-top: 50px;
 }
 
-.me {
-	height: 150px;
-	border-radius: 100%;
-	border-style: solid;
-	border-color: white;
-	margin-top: 40px;
-}
-
 #container {
-	width: 800px;
+	width: 100%;
 	margin: 0 auto;
 	text-align: center;
+	background-color: #0852FD;
 }
 
 #smallcontainer {
-	background-color: black; opacity 0.5;
-	width: 600px;
-	margin: 0 auto;
+	width: 50%;
+	margin: 40px auto;
 	text-align: center;
-}
-
-.bordRound{
-	border-style: solid;
-    border-width: 5px;
+	padding: 60px;
+	background-color: #0852FD;
 }
