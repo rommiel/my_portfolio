@@ -1,41 +1,67 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Developer Portfolio - RJ Francisco</title>
-	<link rel="stylesheet" type="text/css" href="assets/styles/style.css">
+	<title>RJ Francisco | Portfolio</title>
+	<link rel="stylesheet" href="assets/styles/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<meta http-equiv="X-UA-Compatible" content="IE-edge">
 </head>
 <body>
-	<table align="center" class="tblMain nomob">
-		<tr>
-			<td>
-				<img class="me" src="assets/images/me.jpg">
-			</td>
-			<td>
-				<h1>RJ Francisco</h1>
-				<h2>FULL STACK WEB DEVELOPER</h2>
-			</td>
-		</tr>
-	</table>
+	<div class="container">
+		<div class="main clear">
+			<div class="me col-lg-4"></div>
+			<div class="side-container col-lg-8" id="main-frame">
+				<div class="my-name col-lg-6">
+					<h1>RJ FRANCISCO</h1>
+					<p>Full Stack Web Developer</p>
+				</div>
+				<div class="about-me col-lg-6" id="about-me">
+					<div class="box ease">
+						<h1 class="change" onclick="myFunction()">ABOUT ME</h1> <!-- added onclick my function  -->
+					</div>
+				</div>
+				<div class="portfolio col-lg-6" id="portfolio">
+					<div class="box ease">
+						<h1 class="change">PORTFOLIO</h1>
+					</div>
+				</div>
+				<div class="contacts col-lg-6" id="contacts">
+					<div class="box ease">
+						<h1 class="change">CONTACT ME</h1>
+					</div>
+				</div>
+			</div>
 
-	<table align="center" class="tblMain nodesk">
-		<tr>
-			<td class="tblLeft">
-				<img class="me" src="assets/images/me.jpg">
-			</td>
-		</tr>
-		<tr class="tblRight">
-			<td>
-				<h1>RJ Francisco</h1>
-				<h2>FULL STACK WEB DEVELOPER</h2>
-			</td>
-		</tr>
-	</table>
-
-
-
-	<div id="smallcontainer" class="bio">
-		Full name Rommiel John T. Francisco -  a Full Stack Web Developer. Aside from that, he also have an experienced on Digital Marketing and Quality Assurance. Despite busy working life, he does not forget to have fun. He loves music and plays drums. He is also passionate in sports and play Basketball on some of his free time.	
+			<!-- start hidden -->
+			<div class="hidden side-container col-lg-8" id="second-frame-about">
+				<div class="big-box col-lg-12" id="aboutme">
+					<article>
+						<p id="back" onclick="myFunctionBack()">&lt; BACK</p>
+						<h1>Hi I'm RJ</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</article>
+				</div>
+			</div>
+			<!-- END hidden -->
+		</div>
 	</div>
+
+
+	<script>
+		function myFunction() {
+			document.getElementById("second-frame-about").style.display = "block";
+			document.getElementById("main-frame").style.display = "none";
+		}
+
+		function myFunctionBack() {
+			document.getElementById("second-frame-about").style.display = "none";
+			document.getElementById("main-frame").style.display = "block";
+		}
+	</script>
 </body>
 </html>
