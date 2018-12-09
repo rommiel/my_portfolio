@@ -61,11 +61,12 @@
 			<!-- START of BANNER -->
 			<div class="banner-container">
 				<h1 id="my-name">RJ FRANCISCO</h1>
-				<h3>&nbsp;</h3>
-				<h2 class="mob">Full Stack Web Developer / Campaign Manager</h2>
+				<h3 id="small-white">&nbsp;</h3>
+				<h2 id="small-red" class="mob">Full Stack Web Developer / Campaign Manager</h2>
 				<div class="typewriter nomob">
 					<div class="typewriter-text"><h2>Full Stack Web Developer / Campaign Manager</h2></div>
 				</div>
+				<a href="#about"><img class="arrow-down" src="assets/images/arrow-down.png" alt="scroll down"></a>
 			</div>
 			<!-- END of BANNER -->
 		</div>	<!-- End Banner-Wrapper HOME -->
@@ -172,5 +173,14 @@
 			RJ Francisco &copy; 2018. All rights reserved.
 		</div>
 	</footer>
+
+	<script type="text/javascript">
+		$(function() {
+			$('a[href*=#]').on('click', function(e) {
+				e.preventDefault();
+				$('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+			});
+		});
+	</script>
 </body>
 </html>
