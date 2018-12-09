@@ -31,7 +31,7 @@
 <body>
 	<div class="no-pad" class="container-fluid">
 		<div id="home" class="banner-wrapper">
-			<nav id="home-nav" class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<nav id="home-nav" class="fixed-top navbar navbar-expand-lg navbar-dark bg-dark">
 				<a href="#home" onClick="document.location.reload(true)" class="navbar-brand">
 					RJ FRANCISCO
 				</a>
@@ -180,6 +180,10 @@
 				e.preventDefault();
 				$('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
 			});
+		});
+
+		$('.navbar-nav>li>a').on('click', function(){
+			$('.navbar-collapse').collapse('hide');
 		});
 	</script>
 </body>

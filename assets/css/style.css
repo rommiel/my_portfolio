@@ -76,13 +76,13 @@ body {
 	padding-right: 0;
 }
 
-#home-nav {
+/*#home-nav {
 	position: fixed;
 	top: 0;
 	right: 0;
 	left: 0;
 	z-index: 1030;
-}
+}*/
 
 .banner-wrapper {
 	min-height: 700px;
