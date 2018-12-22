@@ -1,0 +1,105 @@
+body {
+font-family: 'Poppins', sans-serif;
+}
+
+/*.no-pad {
+padding: 0 !important; 
+}*/
+
+.banner-wrapper {
+min-height: 100vh;
+width: 100%;
+position: relative;
+background-image: url('../images/bannerj2.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+background-color: #333;
+}
+
+.container-fluid {
+padding: 0 !important;
+}
+
+
+.box {
+border: 10px solid rgba(139,0,0,0.5);
+height: 150px;
+width: 150px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+/*transform: rotate(45deg);*/
+}
+
+
+
+
+
+
+
+
+
+
+.DiamondContainer{
+  width:300px;
+  /*transform:rotateZ(45deg);*/
+  /*margin:200px;*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /*background-color:#000;*/
+}
+.diamond{
+  width:150px;
+  height:150px;
+  float:left;
+  /*border:10px solid yellow;*/
+  border-left: 10px solid #3EC8AC;
+  border-right: 10px solid #4E90A4;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-position: 0 0, 0 100%;
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% 10px;
+  -moz-background-size: 100% 10px;
+  background-size: 100% 10px;
+  background-image: -webkit-linear-gradient(left, #3EC8AC 0%, #4E90A4 100%), -webkit-linear-gradient(left, #3EC8AC 0%, #4E90A4 100%);
+  background-image: -moz-linear-gradient(left, #3EC8AC 0%, #4E90A4 100%), -moz-linear-gradient(left, #3EC8AC 0%, #4E90A4 100%);
+  background-image: -o-linear-gradient(left, #3EC8AC 0%, #4E90A4 100%), -o-linear-gradient(left, #3EC8AC 0%, #4E90A4 100%);
+  background-image: linear-gradient(to right, #3EC8AC 0%, #4E90A4 100%), linear-gradient(to right, #3EC8AC 0%, #4E90A4 100%);
+  /*transform: translate(-50%, -50%);*/
+  /*margin:2px;*/
+  /*background-color:#fff;*/
+}
+
+.diamond2{
+  width:150px;
+  height:150px;
+  float:left;
+  /*transform: translate(-50%, -50%);*/
+  /*margin:2px;*/
+  /*background-color:#fff;*/
+}
+
+.diamond span{
+  display:block;
+  /*transform:rotateZ(-45deg);*/
+  line-height:150px;
+  text-align:center;
+  color:#FFF;
+  font-size: 90px;
+  text-decoration:none;
+}
+
+.diamond2 span{
+  display:block;
+  transform:rotateZ(-45deg);
+  text-align:center;
+  color:#FFF;
+  font-size: 90px;
+  text-decoration:none;
+}

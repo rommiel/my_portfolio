@@ -18,12 +18,13 @@
 	display: inline-block;
 	overflow: hidden;
 	letter-spacing: 2px;
-	animation: typing 5s steps(30, end), blink .75s step-end infinite;
+	animation: typing 5s steps(44, end), blink .75s step-end infinite;
 	white-space: nowrap;
 	font-size: 25px;
 	font-weight: 700;
 	border-right: 4px solid orange;
 	box-sizing: border-box;
+	font-family: 'B612 Mono', monospace;
 }
 
 @keyframes typing {
@@ -68,7 +69,8 @@ body {
 }
 
 .no-pad {
-	padding: 0; !important
+	padding: 0 !important;
+	margin: 0 !important;
 }
 
 .container-fluid {
@@ -76,54 +78,83 @@ body {
 	padding-right: 0;
 }
 
-/*#home-nav {
-	position: fixed;
-	top: 0;
-	right: 0;
-	left: 0;
-	z-index: 1030;
-}*/
+.orangeMe {
+	color: #e84545;
+}
+
+.nav-link:hover {
+	color: #e84545;
+}
 
 .banner-wrapper {
 	min-height: 700px;
-	height: 100%;
+	height: 100vh;
 	position: relative;
-	background-image: url('../images/Banner.jpg');
+	background-image: url('../images/Bannerv2.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-color: #333;
 }
 
+.trans-box {
+	background-color: rgba(0,0,0,0.5); 
+	display: inline-block;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.no-deco {
+	text-decoration: none;
+	color: #FFF !important;
+}
+
+.cv {
+	margin: 20px auto 20px auto;
+	border: 1px solid #e84545;
+	width: 200px;
+	padding: 10px;
+	border-radius: 4px;
+}
+
+
+
+.cv:hover {
+	background: #e84545;
+}
+
 .banner-container {
 	width: 100%;
 	text-align: center;
-	padding-top: 240px;
+	padding-top: 200px;
 }
 
 .banner-container h1 {
 	font-weight: bold;
 	color: white;
-	font-size: 45px;
+	font-size: 55px;
 }
 
 .banner-container h3 {
-	border-top: 1px solid #e84545;
+	border-top: 5px solid #e84545;
 	margin: 10px auto 0;
 	font-size: 10px;
-	width: 40%;
+	width: 10%;
 }
 
 .banner-container h2 {
 	color: white;
-	font-size: 25px;
+	font-size: 15px;
+	font-family: 'B612 Mono', monospace;
 }
 
 .arrow-down {
-	width: 100px;
+	width: 60px;
 	height: auto;
 	position: absolute;
-	top: 75%;
-	left: 50%;
+	top: 70%;
+	left: 48%;
 	transform: translate(-50%, -50%);
 }
 
@@ -171,6 +202,96 @@ h1 {
 	margin-bottom: 0;
 }
 
+
+
+
+
+
+
+/* Start of Work */
+
+#work-title {
+	padding-top: 30px;
+	color: #FFF;
+	background-color: rgba(0,0,0,0.5);
+}
+
+.parallax {
+	margin-top: 50px; 
+	/* The image used */
+	background-image: url("../images/work.jpg");
+
+	/* Set a specific height */
+	min-height: 1300px;
+	height: 100%; 
+	width: 100%;
+
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#work-black {
+	background-color: rgba(0,0,0,0.95);
+	color: #fff;
+	padding: 30px;
+	width: 50%;
+	float: right;
+}
+
+#work-white {
+	background-color: rgba(255,255,255,0.95);
+	color: #000;
+	padding: 30px;
+	width: 50%;
+	float: left;
+}
+
+.w100 {
+	width: 100%;
+	min-width: 100%;
+}
+
+.w100 h3 {
+	color: #f05a5d;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: left;
+}
+
+.w100 p {
+	font-size: 12px;
+	font-family: 'Roboto', sans-serif;
+}
+
+.container {
+	margin: 0 auto;
+}
+
+.clear:after { 
+	content: "";
+	clear: both;
+	display: block;
+}
+/* End of WORK */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #projects {
 	padding: 60px 0;
 }
@@ -217,9 +338,13 @@ footer {
 	color: white;
 }
 
+#contact-container {
+	padding-top: 245px;
+}
+
 #w600 {
-	max-width: 600px;
-	margin: 250px auto 30px auto;
+	max-width: 800px;
+	margin: 0 auto 20px auto;
 	text-align: center;
 	color: white;
 }
@@ -241,8 +366,8 @@ footer {
 }
 */
 
-
-@media (max-width: 750px) {
+/*original max width 750px */
+@media (max-width: 550px) {
 	.mob {
 		display: block; !important
 	}
@@ -250,16 +375,27 @@ footer {
 	.nomob {
 		display: none; !important
 	}
+
+	.arrow-down {
+		width: 60px;
+		height: auto;
+		position: absolute;
+		top: 70%;
+		left: 46%;
+		transform: translate(-50%, -50%);
+	}
 }
 
 
 @media (max-width: 470px) {
 	#my-name {
-		color: #e84545;
+		color: #FFF;
+		text-transform: uppercase;
+		letter-spacing: 3px;
 	}
 
 	#small-red {
-		color: #e84545;
+		color: #FFF;
 	}
 
 	#small-white {
@@ -267,5 +403,41 @@ footer {
 		margin: 10px auto 0;
 		font-size: 10px;
 		width: 40%;
+	}
+
+	.arrow-down {
+		width: 60px;
+		height: auto;
+		position: absolute;
+		top: 73%;
+		left: 40%;
+		transform: translate(-50%, -50%);
+	}
+
+	.banner-container h1 {
+		font-weight: bold;
+		color: white;
+		font-size: 45px;
+	}
+}
+
+
+
+/* For Professional Journey */
+@media (max-width: 480px) {
+	#work-black {
+		background-color: rgba(0,0,0,0.95);
+		color: #fff;
+		padding: 30px;
+		width: 100%;
+		float: right;
+	}
+
+	#work-white {
+		background-color: rgba(255,255,255,0.95);
+		color: #000;
+		padding: 30px;
+		width: 100%;
+		float: left;
 	}
 }
