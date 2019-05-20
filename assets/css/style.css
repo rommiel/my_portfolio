@@ -296,9 +296,9 @@ h1 {
 	padding: 60px 0;
 }
 
-.proj-icon {
-	width: 64px;
-	height: 64px;
+#proj-icon {
+	width: 80px;
+	height: 80px;
 	margin-right: 10px;
 }
 
