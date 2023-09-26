@@ -179,6 +179,19 @@ h1 {
 	margin-bottom: 50px;
 }
 
+.half-box {
+  max-width: 600px;
+  width: 100%;
+}
+
+.margin-auto {
+  margin: 0 auto;
+}
+
+.pad-30 {
+	padding: 30px;
+}
+
 .sb-container {
 	margin-bottom: 20px;
 }
@@ -319,6 +332,25 @@ h1 {
 
 .shadow-bott {
 	border-bottom: 3px double #e84545;
+}
+
+#tech-stack {
+	max-width: 750px;
+	width: 100%;
+	margin: 0 auto;
+	padding-top: 60px;
+	padding-bottom: 30px;
+}
+
+.stack-container {
+	display: inline-block;
+	padding: 15px;
+	margin: 0 auto;
+}
+
+.stack-icon {
+	height: 100px;
+	width: 100px;
 }
 
 footer {
